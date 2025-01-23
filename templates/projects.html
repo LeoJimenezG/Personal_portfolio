@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "header.html" %}
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            {% include "navbar.html" %}
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Main Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-10 col-xxl-10">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Tamay: Cuidado y bienestar de las plantas domésticas</h2>
+                                            <br />
+                                            <p>
+                                                A mobile app designed to track and care for your domestic plants. My
+                                                role involved creating APIs to retrieve, process, and send weather
+                                                information, as well as providing tailored recommendations based on
+                                                that data to enhance the app's functionality. I developed these APIs
+                                                using the Python Flask framework and successfully integrated them with
+                                                the app's backend to ensure seamless communication between the mobile
+                                                application and the weather data services.
+                                            </p>
+                                        </div>
+                                        <img class="w-auto" src="{{ url_for('static', filename='assets/tamay.png') }}" alt="Tamay logo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Modelo Logístico para predecir a tiempo la deserción escolar</h2>
+                                            <br />
+                                            <p>
+                                                This project was particularly meaningful due to its objective:
+                                                predicting student dropout possibility in a timely manner using a Logistic
+                                                Model. My contributions included using R to clean and preprocess the
+                                                data, as well as to train and test the model. Additionally, I took the
+                                                lead in writing, sharing, and explaining most of the project's documentation.
+                                                This process allowed me to deeply explore the mathematics behind the model
+                                                and its foundational principles, enhancing my understanding and involvement in the project.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid" src="{{ url_for('static', filename='assets/rl.png') }}" alt="Sigmoid function graphic" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's code together!</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{{ url_for('contact_page') }}">Contact me</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        {% include "footer.html" %}
+    </body>
+</html>
