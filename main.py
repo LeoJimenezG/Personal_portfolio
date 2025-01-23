@@ -23,7 +23,7 @@ def projects_page():
     return render_template("projects.html")
 
 
-@app.route("/contact", methods=["GET", "POST"])
+@app.route("/contact", methods=["GET"])
 def contact_page():
     return render_template("contact.html")
 
