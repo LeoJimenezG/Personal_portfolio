@@ -28,6 +28,11 @@ The website includes four main public routes, none of which require any credenti
 - The design is based on a **BootStrap template**, which I customized to suit my portfolio.  
 - I considered adding user accounts and credentials but decided it was not necessary for the purpose of this project.  
 
+
+- *Extra: I was planing on using GitHub pages to host my website. However, I've realized that it only works for static 
+websites. My website is dynamic and I need more things than expected in order for it to work. So, I will try to learn more
+about this topic and try this task later.*
+- *More extra: GitHub Actions documentation links don't work (404 error).*
 ---
 
 ## 📚 Useful Resources  
